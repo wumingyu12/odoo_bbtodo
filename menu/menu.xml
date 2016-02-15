@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <menuitem id="headmenu" name="todo例子" sequence="-1"/>
+            <menuitem id="my_example_1_1" name="目录1" parent="headmenu"/>
+                <act_window id="action_mymodel"
+                 name="模型"
+                 res_model="bbtodo.mymodel"
+                 view_mode="tree,form"
+                 />
+                <menuitem id="my_example_1_1_1" name="模型" parent="my_example_1_1"  action="action_mymodel"/>
+
+                <!-- ============================菜单二========================= -->
+                <record id="action_appview" model="ir.actions.client">
+                    <field name="name">todo主页面</field>
+                    <field name="tag">bbtodo_appview</field>
+                </record>
+                <menuitem id="my_example_1_1_2" name="todo主页面" parent="my_example_1_1"  action="action_appview"/>
+    </data>
+</openerp>

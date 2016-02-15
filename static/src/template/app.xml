@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <!-- 主显示组件 -->
+    <t t-name="appview">
+        <div id="bbtodo" class="container">
+            <div  class="row">
+                <div class="col-md-5 col-md-offset-4 my-main-pan">
+                    <h1 class="title">todo例子</h1>
+                    <input type="text" class="edit_input" placeholder="请输入事项，按回车确认"/>
+                    <ul class="widget_todolist"><!--用来显示todo的具体项目-->
+
+                    </ul>
+                    <footer>
+                        <button class="selectAll">选择所有项目</button>
+                        <button class="deleteSelect">删除选择项</button>
+                    </footer>
+
+                    <!-- 模态框 -->
+                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <h1>输入不能为空</h1>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-md-offset-4 text-center">
+                    <br/>
+                    <h4>双击可以对项目进行更改</h4>
+                    <br/>
+                    <h4>20160121 by wumingyu</h4>
+                </div>
+            </div>
+        </div>
+
+    </t>
+
+    <!-- 组件二可以显示每一条todo -->
+    <t t-name="todoview">
+        <input class="check_box" type="checkbox"/>
+        <span class="my-name"><t t-esc="model.name"/></span>
+        <input class="todoview_edit" t-att-value="model.name"/>
+        <a class="destroy"><span class="glyphicon glyphicon-remove-circle"></span></a>
+    </t>
+</templates>

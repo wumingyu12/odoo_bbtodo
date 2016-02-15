@@ -1,0 +1,11 @@
+<!--用于引入头文件-->
+<openerp>
+    <data>
+        <template id="assets_backend" name="petstore_assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/bbtodo/static/src/js/app.js"/>
+                <link href="/bbtodo/static/src/css/app.css" rel="stylesheet" type="text/css" />
+            </xpath>
+        </template>
+    </data>
+</openerp>
