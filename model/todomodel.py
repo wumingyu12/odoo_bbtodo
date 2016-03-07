@@ -18,3 +18,4 @@ class Mytodo(models.Model):
     @api.model
     def deleteItem(self,id):
         self.browse([id]).unlink();
+
