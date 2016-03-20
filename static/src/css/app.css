@@ -1,39 +1,39 @@
 
-#bbtodo {
+#odoo_bbtodo {
 
 }
-#bbtodo .my-main-pan{
+#odoo_bbtodo .my-main-pan{
     box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
     background-color: rgb(240,240,240);
 }
 
-#bbtodo footer{
+#odoo_bbtodo footer{
     width:100%;
     padding: 0px;
     margin: 10px;
     text-align: center;
 }
 
-#bbtodo button{
+#odoo_bbtodo button{
     font-size: 25px;
 }
 
-#bbtodo .title{
+#odoo_bbtodo .title{
     text-align: center;
 }
 
-#bbtodo .edit_input{
+#odoo_bbtodo .edit_input{
     width: 100%;
     font-size: 30px;
     padding: 5px;
     margin: 12px;
 }
 
-#bbtodo ul{
+#odoo_bbtodo ul{
     padding: 0px;
 }
 
-#bbtodo .widget_todolist li{
+#odoo_bbtodo .widget_todolist li{
     width: 100%;
     font-size: 25px;
     margin: 4px;
@@ -42,17 +42,17 @@
     padding: 4px;
 }
 
-#bbtodo ul li .destroy{
+#odoo_bbtodo ul li .destroy{
     position: absolute;
 	right:15px;
     display: none;
 
 }
 
-#bbtodo li:hover .destroy {
+#odoo_bbtodo li:hover .destroy {
   	display: inline-block;
 }
 
-#bbtodo .todoview_edit{
+#odoo_bbtodo .todoview_edit{
     width:80%;
 }

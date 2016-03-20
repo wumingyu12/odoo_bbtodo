@@ -1,10 +1,10 @@
-openerp.bbtodo = function(instance, local) {//名字一定要与模块名字意义，local就是instance.nmwlw
+openerp.odoo_bbtodo = function(instance, local) {//名字一定要与模块名字意义，local就是instance.nmwlw
     var _t = instance.web._t,
         _lt = instance.web._lt;
     var QWeb = instance.web.qweb;
 
     //对应的后台模型
-    var TodosModel = new instance.web.Model('bbtodo.mymodel');
+    var TodosModel = new instance.web.Model('odoo_bbtodo.mymodel');
 
     local.AppView=instance.Widget.extend({
         template:"appview",
@@ -133,5 +133,5 @@ openerp.bbtodo = function(instance, local) {//名字一定要与模块名字意�
         }
     });
 
-    instance.web.client_actions.add('bbtodo_appview','instance.bbtodo.AppView');
+    instance.web.client_actions.add('odoo_bbtodo_appview','instance.odoo_bbtodo.AppView');
 }

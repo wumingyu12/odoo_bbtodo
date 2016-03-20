@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "bbtodo",
+    'name': "odoo_bbtodo",
 
     'summary': """
         将backbone的todo移值到这里""",

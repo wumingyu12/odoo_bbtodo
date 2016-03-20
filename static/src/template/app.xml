@@ -2,7 +2,7 @@
 <templates xml:space="preserve">
     <!-- 主显示组件 -->
     <t t-name="appview">
-        <div id="bbtodo" class="container">
+        <div id="odoo_bbtodo" class="container">
             <div  class="row">
                 <div class="col-md-5 col-md-offset-4 my-main-pan">
                     <h1 class="title">todo例子</h1>
