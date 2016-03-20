@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
+        <!-- tree view -->
+        <record model="ir.ui.view" id="odoo_bbtodo_mymodel_tree_view">
+            <field name="name">odoo_bbtodo.tree</field>
+            <field name="model">odoo_bbtodo.mymodel</field>
+            <field name="arch" type="xml">
+                <tree string="mymodel tree">
+                    <field name="name" type="char"/>
+                    <field name="wendu" type="char"/>
+                </tree>
+            </field>
+        </record>
+        <!-- search view -->
+        <record model="ir.ui.view" id="odoo_bbtodo_mymodel_search_view">
+            <field name="name">odoo_bbtodo.search</field>
+            <field name="model">odoo_bbtodo.mymodel</field>
+            <field name="arch" type="xml">
+                <search string="mymodel search">
+                    <filter name="by_Addr" string="分组" context="{'group_by':'name'}"/>   
+                    <filter name="by_Addr1" string="分组1" context="{'group_by':'wendu'}"/>   
+                </search>
+            </field>
+        </record>
         <menuitem id="headmenu" name="todo例子" sequence="-1"/>
             <menuitem id="my_example_1_1" name="目录1" parent="headmenu"/>
                 <act_window id="action_mymodel"
